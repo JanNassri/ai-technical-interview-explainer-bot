@@ -1,66 +1,31 @@
-AI Technical Interview Explainer Bot
+# AI Technical Interview Explainer Bot
 
-A simple AI-powered tool that helps users understand coding interview questions.
-Paste a problem → AI explains it in clear steps, shows brute force + optimized solutions, gives time/space complexity, and generates test cases.
+An AI-powered web app that explains coding interview problems in simple steps.  
+Paste any question → get a clear explanation, brute force + optimized solutions, time/space complexity, and test cases.
 
-Features
+---
 
-Explain any coding interview question
+## Features
+- Explain any coding interview question
+- Brute force and optimized solutions
+- Time & space complexity breakdown
+- Auto-generated test cases
+- Interview-style follow-up questions
 
-Generate brute force + optimized solutions
+---
 
-Provide time & space complexity
+## Tech Stack
+**Frontend:** React (Vite), TailwindCSS  
+**Backend:** FastAPI (Python)  
+**AI:** OpenAI GPT-4.1 / o3-mini  
+**Deployment:** Vercel (frontend), Render (backend)
 
-Create test cases and edge cases
+---
 
-Give follow-up interview questions
+## How to Run
 
-Tech Stack
-
-Frontend: React (Vite), TailwindCSS
-Backend: FastAPI (Python)
-AI: OpenAI GPT-4.1 / o3-mini
-Deployment: Vercel + Render
-
-How It Works
-
-User pastes a coding problem
-
-Frontend sends it to the backend
-
-Backend calls OpenAI
-
-AI returns a full explanation
-
-UI displays the answer cleanly
-
-Setup
-Backend
+### Backend
+```bash
 cd backend
 pip install -r requirements.txt
 uvicorn app.main:app --reload
-
-Frontend
-cd frontend
-npm install
-npm run dev
-
-Project Structure
-backend/
-frontend/
-README.md
-.gitignore
-
-Example API Request
-POST /explain
-{
-  "question": "Two Sum problem description..."
-}
-
-Future Improvements
-
-User answer grading
-
-Save history of solved problems
-
-Support more languages (Java, JS, C++)

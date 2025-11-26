@@ -29,3 +29,22 @@ Paste any question → get a clear explanation, brute force + optimized solution
 cd backend
 pip install -r requirements.txt
 uvicorn app.main:app --reload
+
+cd frontend
+npm install
+npm run dev
+
+
+ai-interview-explainer/
+  ├── backend/
+  ├── frontend/
+  ├── .gitignore
+  └── README.md
+
+
+{
+  "question": "Explain the Two Sum problem..."
+}
+
+
+Full explanation with solutions, complexity, and test cases...
